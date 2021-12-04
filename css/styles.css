@@ -199,6 +199,31 @@ ul {
 .features-list {
   display: flex;
 }
+
+/* ======= Иконки через ::before ======= */
+.features-item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: var(--secondary-bcg-color);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-antenna::before {
+  background-image: url('../images/antenna.svg');
+}
+.icon-clock::before {
+  background-image: url('../images/clock.svg');
+}
+.icon-diagram::before {
+  background-image: url('../images/diagram.svg');
+}
+.icon-astronaut::before {
+  background-image: url('../images/astronaut.svg');
+}
+
 .features-item {
   max-width: 270px;
 }
@@ -291,6 +316,31 @@ ul {
   padding: 60px 0;
 }
 
+.join-icon {
+  background-color: rgba(255, 255, 255, 0.1);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+}
+.instagram {
+  background-image: url('../images/instagram-f.svg');
+}
+.twitter {
+  background-image: url('../images/twitter-f.svg');
+}
+.facebook {
+  background-image: url('../images/facebook-f.svg');
+}
+.linkedin {
+  background-image: url('../images/linkedin-f.svg');
+}
+.join-icon:hover,
+.join-icon:focus {
+  background-color: var(--accent-color);
+}
 /* ======== Портфолио ========  */
 .filter {
   display: flex;
