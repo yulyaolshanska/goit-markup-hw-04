@@ -315,6 +315,14 @@ ul {
   background-color: var(--dark-bcg-color);
   padding: 60px 0;
 }
+.join-text {
+  color: var(--white-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
 
 .join-icon {
   background-color: rgba(255, 255, 255, 0.1);
