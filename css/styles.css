@@ -6,6 +6,7 @@
 /* Вторичный цвет фота #F5F4FA */
 /* Темный цвет фона #2F303A */
 /* Border для карточек #EEEEEE */
+/* Цвет иконок #AFB1B8 */
 /* Второй шрифт 'Raleway'    */
 :root {
   --accent-color: #2196f3;
@@ -16,6 +17,7 @@
   --secondary-bcg-color: #f5f4fa;
   --dark-bcg-color: #2f303a;
   --card-border: #eeeeee;
+  --icon-color: #afb1b8;
 }
 body {
   background-color: var(--white-bcg-color);
@@ -201,9 +203,11 @@ ul {
 }
 
 .icons-box {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
-  border-color: var(--secondary-bcg-color);
+  background-color: var(--secondary-bcg-color);
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -296,8 +300,35 @@ ul {
 }
 .team-info {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
   text-align: center;
+}
+.social-networks {
+}
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 30px;
+}
+.social-link:hover,
+.social-link:focus {
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}
+.social-icon {
+  fill: var(--icon-color);
+}
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--white-text-color);
 }
 
 /* ======== Footer ========  */
@@ -350,6 +381,9 @@ ul {
 .join-item:not(:last-child) {
   margin-right: 10px;
 }
+
+/* ======= Иконки через фоновое изображение ======= */
+/*
 .join-icon {
   background-color: rgba(255, 255, 255, 0.1);
   background-repeat: no-repeat;
@@ -359,9 +393,7 @@ ul {
   height: 44px;
   width: 44px;
 }
-
-/* ======= Иконки через фоновое изображение ======= */
-/* .instagram {
+.instagram {
   background-image: url('../images/instagram-f.svg');
 }
 .twitter {
