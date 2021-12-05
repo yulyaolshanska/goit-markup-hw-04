@@ -200,8 +200,20 @@ ul {
   display: flex;
 }
 
+.icons-box {
+  display: block;
+  height: 120px;
+  border-color: var(--secondary-bcg-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.icon {
+  height: 70px;
+  width: 70px;
+}
+
 /* ======= Иконки через ::before ======= */
-.features-item::before {
+/* .features-item::before {
   content: '';
   display: block;
   height: 120px;
@@ -222,7 +234,8 @@ ul {
 }
 .icon-astronaut::before {
   background-image: url('../images/astronaut.svg');
-}
+} */
+/* ======= Иконки через ::before конец ======= */
 
 .features-item {
   max-width: 270px;
@@ -346,7 +359,9 @@ ul {
   height: 44px;
   width: 44px;
 }
-.instagram {
+
+/* ======= Иконки через фоновое изображение ======= */
+/* .instagram {
   background-image: url('../images/instagram-f.svg');
 }
 .twitter {
@@ -361,8 +376,10 @@ ul {
 .join-icon:hover,
 .join-icon:focus {
   background-color: var(--accent-color);
-}
+} */
+
 /* ======== Портфолио ========  */
+
 .filter {
   display: flex;
   justify-content: center;
@@ -407,7 +424,8 @@ ul {
   border-bottom: 1px solid var(--card-border);
   padding: 20px 24px;
 }
-/* Flex-basis  */
+/* ====== Flex-basis ======= */
+
 /* .portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -420,7 +438,9 @@ ul {
   margin-bottom: 30px;
   flex-basis: calc(100% / 4 - 30px);
 } */
+
 /* Flex-basis end  */
+
 .portfolio-item {
   max-width: calc((100% - 60px) / 3);
 }
