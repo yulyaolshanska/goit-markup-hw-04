@@ -146,7 +146,7 @@ ul {
 }
 .contacts-link:hover .contacts-icon,
 .contacts-link:focus .contacts-icon {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 .contacts-link:hover,
 .contacts-link:focus {
